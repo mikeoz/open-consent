@@ -1,0 +1,108 @@
+# Open Consent
+
+**Make human consent the default for every AI agent interaction.**
+
+Open Consent is an umbrella project by [Opnli Corporation](https://opn.li) that open-sources the [Human Consent Layer](https://github.com/mikeoz/human-consent-layer) — the trust infrastructure that gives humans real-time, machine-enforced control over what AI agents do with their data.
+
+The project has one goal: when the market asks "how do I trust agents?" — the Human Consent Layer is the answer.
+
+*My data + Your AI + My control = Living Intelligence*
+
+---
+
+## The Three Tiers
+
+┌─────────────────────────────────────────────────────────────┐
+│ │
+│ Tier 1 — The Standard (Open) │
+│ The HCL specification, CARD schemas, and developer tools. │
+│ Apache 2.0. Anyone can implement it. │
+│ │
+├─────────────────────────────────────────────────────────────┤
+│ │
+│ Tier 2 — Starting-Point Products (Open) │
+│ Reference implementations designed to fork back into │
+│ the major open-source AI projects. Apache 2.0. │
+│ │
+├─────────────────────────────────────────────────────────────┤
+│ │
+│ Tier 3 — The Trust Network (Proprietary) │
+│ The Opnli verification endpoint, CARD registry, │
+│ certification infrastructure, and operator tools. │
+│ This is the business. │
+│ │
+└─────────────────────────────────────────────────────────────┘
+
+
+Open the standard. Release the products. Keep the network. Let the community carry the consent layer into every agent.
+
+---
+
+## The Repos
+
+### Tier 1 — The Standard
+
+| Repo | What It Is | Status |
+|------|-----------|--------|
+| [human-consent-layer](https://github.com/mikeoz/human-consent-layer) | The HCL specification, CARD schemas (Entity, Data, Use, Boundary), and the ATL DevKit. The normative definition of what human consent means in the agent context. | Live |
+| [hcl-devkit](https://github.com/mikeoz/hcl-devkit) | Developer tools: Verification Endpoint client, SHA-256 audit chain library, CARD schema validators. For developers building HCL-conformant agents and platforms. | Live |
+
+### Tier 2 — Starting-Point Products
+
+| Repo | What It Is | Fork-Back Target | Status |
+|------|-----------|------------------|--------|
+| [webmcp-hcl](https://github.com/mikeoz/webmcp-hcl) | Adds HCL consent gates to WebMCP tool registrations. The highest-leverage bridge: WebMCP standardizes tool discovery, the HCL standardizes consent. | WebMCP / W3C Web Machine Learning CG | Live |
+| [crocbox](https://github.com/mikeoz/crocbox) | The reference HCL implementation for OpenClaw agents. Desktop app wrapping OpenClaw with Green Shield consent, tamper-evident audit, and Trust Network integration. | OpenClaw | Audit in progress |
+| [mydatabkt](https://github.com/mikeoz/mydatabkt) | Consent-gated personal data bucket. Your data stays on your machine. Read and write gated by the HCL consent chain with signed proofs. | Local-first AI / AnythingLLM | Live |
+
+### Tier 3 — The Trust Network
+
+The Opnli Trust Network — the verification endpoint, CARD registry, certification infrastructure, and operator tools — is proprietary. It is the Visa/Mastercard layer: the standard is open, the network that certifies compliance is the business.
+
+[opn.li](https://opn.li) — The Openly Trusted Network
+[openlytrusted.ai](https://openlytrusted.ai) — Give trust a try
+
+---
+
+## Why Open Consent Exists
+
+The Agent Economy is arriving. AI agents read files, execute commands, access APIs, send messages, and make decisions on behalf of humans. The industry has built sandbox isolation (NVIDIA NemoClaw), deployment scoping (AWS), design constraints (Meta Rule of Two), and tool discovery (WebMCP). Nobody has built the consent layer — the part where the human says yes or no, understands what they are agreeing to, and can verify the record later.
+
+The Human Consent Layer fills that gap. Open Consent makes it available to everyone.
+
+The strategic model is Let's Encrypt for agent consent: make the standard free and ubiquitous, and operate the network that certifies compliance. The starting-point products are designed as fork-backs — each one flows back into its parent open-source community, carrying the HCL with it:
+
+- **WebMCP sites add HCL consent annotations** → Google's browser-agent protocol gets human consent.
+- **OpenClaw adopts CROCbox's consent gate** → every OpenClaw agent gets the Green Shield.
+- **Local-first AI tools adopt MyDataBkt's consent model** → personal data stays under human control.
+
+Each fork-back creates a new constituency for the HCL standard and a new potential customer for the Trust Network.
+
+---
+
+## The Core Idea in Four Sentences
+
+Only a human can give consent. Consent requires context. CARDs provide context. The Human Consent Layer enforces the decision.
+
+---
+
+## Learn More
+
+- [HCL Specification](https://github.com/mikeoz/human-consent-layer/blob/main/SPEC.md) — The normative spec: four-link consent chain, CARD model, Shield conformance levels, five invariants.
+- [CARD Schemas](https://github.com/mikeoz/human-consent-layer/tree/main/schema) — JSON Schema definitions for CARD credentials and CARD Sets.
+- [WebMCP + HCL Demo](https://github.com/mikeoz/webmcp-hcl/tree/main/demo) — Working demo of HCL consent gating on WebMCP tool calls.
+- [W3C Position Paper](https://opn.li) — The Agent Trust Layer as a proposed standard.
+
+---
+
+## License
+
+All Tier 1 and Tier 2 repos are Apache 2.0.
+
+Certain enforcement mechanisms implemented in products built on the HCL specification are the subject of Provisional Patent Application #63/992,579 filed February 27, 2026. The HCL specification, schemas, and developer tools are open and freely implementable under the Apache 2.0 license.
+
+---
+
+*Only a human can give consent. Consent requires context. CARDs provide context. The Human Consent Layer enforces the decision.*
+
+*— Open Consent, September 2026. Opnli Corporation.*
