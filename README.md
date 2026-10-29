@@ -12,26 +12,28 @@ The project has one goal: when the market asks "how do I trust agents?" — the 
 
 ## The Three Tiers
 
+```text
 ┌─────────────────────────────────────────────────────────────┐
-│ │
-│ Tier 1 — The Standard (Open) │
-│ The HCL specification, CARD schemas, and developer tools. │
-│ Apache 2.0. Anyone can implement it. │
-│ │
+│                                                             │
+│ Tier 1 — The Standard (Open)                                │
+│ The HCL specification, CARD schemas, and developer tools.   │
+│ Apache 2.0. Anyone can implement it.                        │
+│                                                             │
 ├─────────────────────────────────────────────────────────────┤
-│ │
-│ Tier 2 — Starting-Point Products (Open) │
-│ Reference implementations designed to fork back into │
-│ the major open-source AI projects. Apache 2.0. │
-│ │
+│                                                             │
+│ Tier 2 — Starting-Point Products (Open)                     │
+│ Reference implementations designed to fork back into        │
+│ the major open-source AI projects. Apache 2.0.              │
+│                                                             │
 ├─────────────────────────────────────────────────────────────┤
-│ │
-│ Tier 3 — The Trust Network (Proprietary) │
-│ The Opnli verification endpoint, CARD registry, │
-│ certification infrastructure, and operator tools. │
-│ This is the business. │
-│ │
+│                                                             │
+│ Tier 3 — The Openly Trusted Network (Proprietary)           │
+│ Green Shield protections: the consent card, each            │
+│ member's chain, and signed proofs others verify.            │
+│ Operated by Opnli Corporation.                              │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
+```
 
 
 Open the standard. Release the products. Keep the network. Let the community carry the consent layer into every agent.
@@ -52,12 +54,12 @@ Open the standard. Release the products. Keep the network. Let the community car
 | Repo | What It Is | Fork-Back Target | Status |
 |------|-----------|------------------|--------|
 | [webmcp-hcl](https://github.com/mikeoz/webmcp-hcl) | Adds HCL consent gates to WebMCP tool registrations. The highest-leverage bridge: WebMCP standardizes tool discovery, the HCL standardizes consent. | WebMCP / W3C Web Machine Learning CG | Live |
-| [crocbox](https://github.com/mikeoz/crocbox) | The reference HCL implementation for OpenClaw agents. Desktop app wrapping OpenClaw with Green Shield consent, tamper-evident audit, and Trust Network integration. | OpenClaw | Audit in progress |
+| [crocbox](https://github.com/mikeoz/crocbox) | The reference HCL implementation for OpenClaw agents. Desktop app wrapping OpenClaw with Green Shield consent, tamper-evident audit, and Openly Trusted Network integration. | OpenClaw | Audit in progress |
 | [mydatabkt](https://github.com/mikeoz/mydatabkt) | Consent-gated personal data bucket. Your data stays on your machine. Read and write gated by the HCL consent chain with signed proofs. | Local-first AI / AnythingLLM | Live |
 
-### Tier 3 — The Trust Network
+### Tier 3 — The Openly Trusted Network (OTN)
 
-The Opnli Trust Network — the verification endpoint, CARD registry, certification infrastructure, and operator tools — is proprietary. It is the Visa/Mastercard layer: the standard is open, the network that certifies compliance is the business.
+The Openly Trusted Network (OTN) is the network Opnli Corporation operates. It provides Green Shield protections for HCL-compliant trust transactions: the Green Shield card where a member decides, each member's tamper-evident chain of decisions, and signed consent proofs that websites and banks verify for themselves. The network Opnli operates is proprietary. It is the Visa/Mastercard layer: the standard is open; the operating network that certifies compliance and carries trusted transactions is the service provided by Opnli.
 
 [opn.li](https://opn.li) — The Openly Trusted Network
 [openlytrusted.ai](https://openlytrusted.ai) — Give trust a try
@@ -76,7 +78,7 @@ The strategic model is Let's Encrypt for agent consent: make the standard free a
 - **OpenClaw adopts CROCbox's consent gate** → every OpenClaw agent gets the Green Shield.
 - **Local-first AI tools adopt MyDataBkt's consent model** → personal data stays under human control.
 
-Each fork-back creates a new constituency for the HCL standard and a new potential customer for the Trust Network.
+Each fork-back creates a new constituency for the HCL standard and a new potential customer for the Openly Trusted Network.
 
 ---
 
