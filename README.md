@@ -91,7 +91,7 @@ Only a human can give consent. Consent requires context. CARDs provide context. 
 - [HCL Specification](https://github.com/mikeoz/human-consent-layer/blob/main/SPEC.md) — The normative spec: four-link consent chain, CARD model, Shield conformance levels, five invariants.
 - [CARD Schemas](https://github.com/mikeoz/human-consent-layer/tree/main/schema) — JSON Schema definitions for CARD credentials and CARD Sets.
 - [WebMCP + HCL Demo](https://github.com/mikeoz/webmcp-hcl/tree/main/demo) — Working demo of HCL consent gating on WebMCP tool calls.
-- [W3C Position Paper](https://opn.li) — The Agent Trust Layer as a proposed standard.
+- [W3C Position Paper](w3c-position-paper.md) — The Human Consent Layer as a proposed standard (version 4.0, April 2026, with its submission history).
 
 ---
 
