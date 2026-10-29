@@ -14,7 +14,7 @@ The project has one goal: when the market asks "how do I trust agents?" — the 
 
 - **Watch it:** [Green Shield Payments in 45 seconds](https://youtu.be/UKdwVPk2Agw) · [Why agents need the Green Shield, in 70 seconds](https://youtu.be/kE1Hu4gRCu0)
 - **Read the standard:** the [HCL Specification](https://github.com/mikeoz/human-consent-layer/blob/main/SPEC.md)
-- **Add it to your tool:** a Green Shield quickstart, "Add the Green Shield to your MCP tool", is in preparation.
+- **Add it to your tool:** [green-shield-mcp](https://github.com/mikeoz/green-shield-mcp), a reference MCP tool with a ten-minute quickstart (macOS).
 
 ---
 
@@ -61,6 +61,7 @@ Open the standard. Release the products. Keep the network. Let the community car
 
 | Repo | What It Is | Fork-Back Target | Status |
 |------|-----------|------------------|--------|
+| [green-shield-mcp](https://github.com/mikeoz/green-shield-mcp) | Reference MCP tool: a human approves every action on the Openly Trusted Network. Ten-minute quickstart for Claude Desktop. | Any MCP host (Claude Desktop; ChatGPT in private testing) | Live (macOS) |
 | [webmcp-hcl](https://github.com/mikeoz/webmcp-hcl) | Adds HCL consent gates to WebMCP tool registrations. The highest-leverage bridge: WebMCP standardizes tool discovery, the HCL standardizes consent. | WebMCP / W3C Web Machine Learning CG | Live |
 | [crocbox](https://github.com/mikeoz/crocbox) | The reference HCL implementation for OpenClaw agents. Desktop app wrapping OpenClaw with Green Shield consent, tamper-evident audit, and Openly Trusted Network integration. | OpenClaw | Audit in progress |
 | [mydatabkt](https://github.com/mikeoz/mydatabkt) | Consent-gated personal data bucket. Your data stays on your machine. Read and write gated by the HCL consent chain with signed proofs. | Local-first AI / AnythingLLM | Live |
