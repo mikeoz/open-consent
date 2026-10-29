@@ -10,6 +10,14 @@ The project has one goal: when the market asks "how do I trust agents?" — the 
 
 ---
 
+## Start here
+
+- **Watch it:** [Green Shield Payments in 45 seconds](https://youtu.be/UKdwVPk2Agw) · [Why agents need the Green Shield, in 70 seconds](https://youtu.be/kE1Hu4gRCu0)
+- **Read the standard:** the [HCL Specification](https://github.com/mikeoz/human-consent-layer/blob/main/SPEC.md)
+- **Add it to your tool:** a Green Shield quickstart, "Add the Green Shield to your MCP tool", is in preparation.
+
+---
+
 ## The Three Tiers
 
 ```text
@@ -46,8 +54,8 @@ Open the standard. Release the products. Keep the network. Let the community car
 
 | Repo | What It Is | Status |
 |------|-----------|--------|
-| [human-consent-layer](https://github.com/mikeoz/human-consent-layer) | The HCL specification, CARD schemas (Entity, Data, Use, Boundary), and the ATL DevKit. The normative definition of what human consent means in the agent context. | Live |
-| [hcl-devkit](https://github.com/mikeoz/hcl-devkit) | Developer tools: Verification Endpoint client, SHA-256 audit chain library, CARD schema validators. For developers building HCL-conformant agents and platforms. | Live |
+| [human-consent-layer](https://github.com/mikeoz/human-consent-layer) | The HCL specification, CARD schemas (Entity, Data, Use, Boundary), and the ATL DevKit (runs locally; not yet connected to the network). The normative definition of what human consent means in the agent context. | Live |
+| [hcl-devkit](https://github.com/mikeoz/hcl-devkit) | Developer tools: Verification Endpoint client, SHA-256 audit chain library, CARD schema validators. For developers building HCL-conformant agents and platforms. | Quick start out of date (see its note) |
 
 ### Tier 2 — Starting-Point Products
 
@@ -72,13 +80,13 @@ The Agent Economy is arriving. AI agents read files, execute commands, access AP
 
 The Human Consent Layer fills that gap. Open Consent makes it available to everyone.
 
-The strategic model is Let's Encrypt for agent consent: make the standard free and ubiquitous, and operate the network that certifies compliance. The starting-point products are designed as fork-backs — each one flows back into its parent open-source community, carrying the HCL with it:
+The strategic model is Let's Encrypt for agent consent: make the standard free and ubiquitous, while Opnli operates the Openly Trusted Network that certifies compliance. The starting-point products are designed as fork-backs — each one flows back into its parent open-source community, carrying the HCL with it:
 
-- **WebMCP sites add HCL consent annotations** → Google's browser-agent protocol gets human consent.
+- **WebMCP sites add HCL consent annotations** → the W3C WebMCP draft gets human consent.
 - **OpenClaw adopts CROCbox's consent gate** → every OpenClaw agent gets the Green Shield.
 - **Local-first AI tools adopt MyDataBkt's consent model** → personal data stays under human control.
 
-Each fork-back creates a new constituency for the HCL standard and a new potential customer for the Openly Trusted Network.
+Each fork-back creates a new constituency for the HCL standard and new participants on the Openly Trusted Network.
 
 ---
 
@@ -107,4 +115,4 @@ Certain enforcement mechanisms implemented in products built on the HCL specific
 
 *Only a human can give consent. Consent requires context. CARDs provide context. The Human Consent Layer enforces the decision.*
 
-*— Open Consent, September 2026. Opnli Corporation.*
+*— Open Consent, October 2026. Opnli Corporation.*
